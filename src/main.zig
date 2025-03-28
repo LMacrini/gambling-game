@@ -14,7 +14,7 @@ fn createLayout() cl.ClayArray(cl.RenderCommand) {
     cl.beginLayout();
     cl.UI()(.{
         .id = .ID("background"),
-        .background_color = cl.Color{30, 30, 30, 255},
+        .background_color = cl.Color{ 0x30, 0x30, 0x30, 255 },
         .layout = .{
             .sizing = .grow,
             .padding = .{
@@ -27,7 +27,7 @@ fn createLayout() cl.ClayArray(cl.RenderCommand) {
     })({
         cl.UI()(.{
             .id = .ID("rectangle"),
-            .background_color = cl.Color{45, 45, 45, 255},
+            .background_color = cl.Color{ 0x45, 0x45, 0x45, 255 },
             .layout = .{
                 .direction = .top_to_bottom,
                 .sizing = .grow,
